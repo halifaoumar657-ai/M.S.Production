@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.S. Production - Personnalisation & Marquage Textile à Mohéli</title>
+  <meta name="description" content="Atelier de marquage textile et multi-supports basé à Miringoni, Mohéli. Flocage, broderie, tenues professionnelles, scolaires et événements.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Fichier CSS Externe -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#fdfbf7] text-slate-800 antialiased selection:bg-[#f4ad28] selection:text-[#08233f]">
+
+  <!-- EN-TÊTE / NAVIGATION -->
+  <header class="sticky top-0 z-50 bg-[#08233f]/95 backdrop-blur-md text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 font-extrabold text-xl sm:text-2xl tracking-tight text-white">
+        <img src="images/LOGO.jpeg" alt="Logo M.S. Production" class="h-12 w-12 rounded-full object-cover border-2 border-[#f4ad28]">
+        <span><span class="text-[#f4ad28]">M.S.</span> PRODUCTION</span>
+      </a>
+
+      <!-- Menu Navigation Desktop -->
+      <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+        <a href="#accueil" class="hover:text-[#f4ad28] transition-colors">Accueil</a>
+        <a href="#services" class="hover:text-[#f4ad28] transition-colors">Services</a>
+        <a href="#galerie" class="hover:text-[#f4ad28] transition-colors">Réalisations</a>
+        <a href="#equipe" class="hover:text-[#f4ad28] transition-colors">Équipe</a>
+        <a href="#devis" class="hover:text-[#f4ad28] transition-colors">Demander un Devis</a>
+      </nav>
+
+      <!-- Bouton Action / Contact Desktop -->
+      <div class="hidden md:flex items-center">
+        <a href="https://wa.me/2693630000" target="_blank" rel="noopener noreferrer" class="bg-[#f4ad28] hover:bg-[#e09b18] text-[#08233f] font-bold px-5 py-2.5 rounded-full text-sm transition-all shadow-md hover:shadow-lg">
+          WhatsApp Direct
+        </a>
+      </div>
+
+      <!-- Bouton Hamburger Mobile -->
+      <button id="menu-btn" type="button" class="md:hidden text-white hover:text-[#f4ad28] focus:outline-none" aria-label="Ouvrir le menu">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu Mobile Déroulant -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#08233f] border-t border-slate-700/50 px-4 pt-4 pb-6 space-y-3 font-medium">
+      <a href="#accueil" class="block text-white hover:text-[#f4ad28] py-2">Accueil</a>
+      <a href="#services" class="block text-white hover:text-[#f4ad28] py-2">Services</a>
+      <a href="#galerie" class="block text-white hover:text-[#f4ad28] py-2">Réalisations</a>
+      <a href="#equipe" class="block text-white hover:text-[#f4ad28] py-2">Équipe</a>
+      <a href="#devis" class="block text-white hover:text-[#f4ad28] py-2">Demander un Devis</a>
+      <a href="https://wa.me/2693630000" target="_blank" rel="noopener noreferrer" class="block text-center bg-[#f4ad28] text-[#08233f] font-bold px-5 py-2.5 rounded-full text-sm mt-4">
+        WhatsApp Direct
+      </a>
+    </div>
+  </header>
+
+  <!-- SECTION HERO / ACCUEIL -->
+  <section id="accueil" class="relative bg-[#08233f] text-white py-16 lg:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6 text-center lg:text-left">
+        <span class="inline-block bg-[#f4ad28]/20 text-[#f4ad28] border border-[#f4ad28]/30 font-semibold text-xs sm:text-sm px-4 py-1.5 rounded-full uppercase tracking-wider">
+          Basé directement à Miringoni, Mohéli
+        </span>
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+          Votre partenaire pour la <span class="text-[#f4ad28]">personnalisation textile</span> de qualité.
+        </h1>
+        <p class="text-slate-300 text-base sm:text-lg">
+          Nous accompagnons les institutions, écoles, entreprises, associations et acteurs locaux avec des tenues, badges et objets sur-mesure, produits directement sur place.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+          <a href="#devis" class="bg-[#f4ad28] hover:bg-[#e09b18] text-[#08233f] font-bold px-8 py-4 rounded-xl shadow-lg transition-all text-center">
+            Obtenir un devis gratuit
+          </a>
+          <a href="#services" class="border border-slate-600 hover:border-white text-white font-semibold px-8 py-4 rounded-xl transition-all text-center">
+            Découvrir nos services
+          </a>
+        </div>
+      </div>
+
+      <!-- Image Vitrine Hero -->
+      <div class="relative flex justify-center animate-float">
+        <div class="w-full max-w-lg h-80 sm:h-96 rounded-2xl overflow-hidden shadow-2xl border-2 border-slate-700/60 relative group transition-all duration-300 hover:shadow-[#f4ad28]/20 hover:-translate-y-2">
+          <img 
+            src="images/ATELIER & PRODUCTION.png" 
+            alt="Samir dans l'atelier M.S. Production à Miringoni avec les machines et créations" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-[#08233f] via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-left p-4">
+            <p class="text-xs font-semibold text-[#f4ad28] uppercase">Atelier & Production</p>
+            <p class="text-lg font-bold text-white">Samir en action à Miringoni</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION SERVICES -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-[#08233f]">Nos Prestations de Marquage</h2>
+        <p class="text-slate-600 text-base sm:text-lg">Des solutions adaptées à chaque besoin professionnel, scolaire ou événementiel.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Carte 1 -->
+        <div class="rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-[#fdfbf7] flex flex-col animate-float transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl hover:border-[#f4ad28]/50 group">
+          <div class="h-56 w-full overflow-hidden bg-slate-100">
+            <img src="images/t-chert.png" alt="T-shirts et Polos Personnalisés" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <h3 class="text-xl font-bold text-[#08233f] group-hover:text-[#f4ad28] transition-colors">T-shirts & Polos Personnalisés</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Uniformes, polos d'entreprise, t-shirts d'écoles et tenues de travail floqués ou brodés avec le logo de votre institution.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-[#fdfbf7] flex flex-col animate-float delay-1 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl hover:border-[#f4ad28]/50 group">
+          <div class="h-56 w-full overflow-hidden bg-slate-100">
+            <img src="images/p7.jpeg" alt="Maillots et Événements" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <h3 class="text-xl font-bold text-[#08233f] group-hover:text-[#f4ad28] transition-colors">Maillots & Événements</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Séries de maillots sportifs, t-shirts événementiels, casquettes et accessoires personnalisés pour réussir vos rassemblements.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-[#fdfbf7] flex flex-col animate-float delay-2 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl hover:border-[#f4ad28]/50 group">
+          <div class="h-56 w-full overflow-hidden bg-slate-100">
+            <img src="images/p3.jpeg" alt="Badges et Multi-supports" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <h3 class="text-xl font-bold text-[#08233f] group-hover:text-[#f4ad28] transition-colors">Badges & Multi-supports</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Création et impression de badges, signalétiques et supports promotionnels sur-mesure pour votre structure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION GALERIE -->
+  <section id="galerie" class="py-20 bg-[#fdfbf7]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-[#08233f]">Aperçu de nos Réalisations</h2>
+        <p class="text-slate-600 text-base sm:text-lg">Découvrez la précision de nos travaux d'impression et de personnalisation réalisés à Miringoni.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="h-80 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-slate-200 animate-float transition-all duration-300 hover:-translate-y-3 hover:shadow-xl"><img src="images/p1.jpeg" alt="Réalisation M.S. Production 1" class="w-full h-full object-cover"></div>
+        <div class="h-80 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-slate-200 animate-float delay-1 transition-all duration-300 hover:-translate-y-3 hover:shadow-xl"><img src="images/p2.jpeg" alt="Réalisation M.S. Production 2" class="w-full h-full object-cover"></div>
+        <div class="h-80 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-slate-200 animate-float delay-2 transition-all duration-300 hover:-translate-y-3 hover:shadow-xl"><img src="images/p3.jpeg" alt="Réalisation M.S. Production 3" class="w-full h-full object-cover"></div>
+        <div class="h-80 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-slate-200 animate-float delay-3 transition-all duration-300 hover:-translate-y-3 hover:shadow-xl"><img src="images/p4.jpeg" alt="Réalisation M.S. Production 4" class="w-full h-full object-cover"></div>
+        <div class="h-80 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-slate-200 animate-float transition-all duration-300 hover:-translate-y-3 hover:shadow-xl"><img src="images/p5.jpeg" alt="Réalisation M.S. Production 5" class="w-full h-full object-cover"></div>
+        <div class="h-80 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-slate-200 animate-float delay-1 transition-all duration-300 hover:-translate-y-3 hover:shadow-xl"><img src="images/p6.jpeg" alt="Réalisation M.S. Production 6" class="w-full h-full object-cover"></div>
+        <div class="h-80 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-slate-200 animate-float delay-2 transition-all duration-300 hover:-translate-y-3 hover:shadow-xl"><img src="images/p7.jpeg" alt="Réalisation M.S. Production 7" class="w-full h-full object-cover"></div>
+        <div class="h-80 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-slate-200 animate-float delay-3 transition-all duration-300 hover:-translate-y-3 hover:shadow-xl"><img src="images/p8.jpeg" alt="Réalisation M.S. Production 8" class="w-full h-full object-cover"></div>
+        <div class="h-80 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-slate-200 animate-float transition-all duration-300 hover:-translate-y-3 hover:shadow-xl"><img src="images/p9.jpeg" alt="Réalisation M.S. Production 9" class="w-full h-full object-cover"></div>
+        <div class="h-80 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-slate-200 animate-float delay-1 transition-all duration-300 hover:-translate-y-3 hover:shadow-xl"><img src="images/p10.jpeg" alt="Réalisation M.S. Production 10" class="w-full h-full object-cover"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION ÉQUIPE -->
+  <section id="equipe" class="py-20 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-[#08233f]">Une Équipe Proche de Vous</h2>
+        <p class="text-slate-600 text-base sm:text-lg">Un savoir-faire local dédié au développement de la personnalisation à Mohéli.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div class="bg-[#fdfbf7] border border-slate-200/80 rounded-2xl p-6 text-center space-y-4 shadow-sm hover:shadow-md transition-all animate-float">
+          <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-[#08233f] shadow-md">
+            <img src="images/Nidhoimi Moukallidou.png" alt="Nidhoimi Moukallidou" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-[#08233f]">Nidhoimi Moukallidou</h3>
+            <p class="text-[#f4ad28] font-semibold text-sm">Gestion & Co-fondateur</p>
+          </div>
+        </div>
+
+        <div class="bg-[#fdfbf7] border border-slate-200/80 rounded-2xl p-6 text-center space-y-4 shadow-sm hover:shadow-md transition-all animate-float delay-1">
+          <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-[#08233f] shadow-md">
+            <img src="images/Nidhoimi Samir.png" alt="Nidhoimi Samir" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-[#08233f]">Nidhoimi Samir</h3>
+            <p class="text-[#f4ad28] font-semibold text-sm">Opérations & Atelier Miringoni</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION DEVIS -->
+  <section id="devis" class="py-20 bg-[#fdfbf7]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white border border-slate-200/80 rounded-3xl p-8 sm:p-12 shadow-xl space-y-8">
+        <div class="text-center space-y-3">
+          <h2 class="text-3xl font-extrabold text-[#08233f]">Demander un Devis Gratuit</h2>
+          <p class="text-slate-600 text-sm sm:text-base">Remplissez le formulaire ci-dessous, notre équipe M.S. Production vous répondra rapidement.</p>
+        </div>
+
+        <p id="form-status" class="hidden rounded-xl p-4 text-center text-sm font-semibold"></p>
+
+        <form id="quote-form" action="https://formspree.io/f/mwvndkey" method="POST" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-sm font-bold text-[#08233f] mb-2">Nom complet / Organisation *</label>
+              <input type="text" id="name" name="name" required placeholder="Ex: École de Miringoni ou Nom" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 text-sm focus:bg-white transition-all">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-bold text-[#08233f] mb-2">Adresse E-mail *</label>
+              <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 text-sm focus:bg-white transition-all">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="phone" class="block text-sm font-bold text-[#08233f] mb-2">Téléphone / WhatsApp *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+269 xx xx xx" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 text-sm focus:bg-white transition-all">
+            </div>
+            <div>
+              <label for="service_type" class="block text-sm font-bold text-[#08233f] mb-2">Type de prestation</label>
+              <select id="service_type" name="service_type" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 text-sm focus:bg-white transition-all">
+                <option value="Flocage / Marquage Textile">Flocage / Marquage Textile</option>
+                <option value="Broderie">Broderie</option>
+                <option value="Badges & Accessoires">Badges & Accessoires</option>
+                <option value="Autre demande">Autre demande</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-bold text-[#08233f] mb-2">Détails de votre projet (quantités, couleurs, délais) *</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Décrivez votre besoin (ex: 30 t-shirts floqués avec logo pour un événement)..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 text-sm focus:bg-white transition-all"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-[#08233f] hover:bg-[#0c3156] text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all text-sm flex items-center justify-center gap-2">
+            Envoyer ma demande de devis
+            <span aria-hidden="true">&rarr;</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIED DE PAGE (FOOTER) -->
+  <footer class="bg-[#08233f] text-[#fdfbf7] border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="images/LOGO.jpeg" alt="M.S. Production" class="h-10 w-10 rounded-full object-cover border border-[#f4ad28]">
+        <div>
+          <p class="font-extrabold text-lg"><span class="text-[#f4ad28]">M.S.</span> PRODUCTION</p>
+          <p class="text-slate-400 text-xs">Marquage textile et multi-supports à Miringoni, Mohéli.</p>
+        </div>
+      </div>
+
+      <div class="text-slate-400 text-xs text-center md:text-right space-y-1">
+        <p>&copy; 2026 M.S. Production. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+<!-- Bouton Retour en Haut -->
+  <button id="backToTop" class="fixed bottom-6 right-6 z-50 hidden bg-[#f4ad28] hover:bg-[#e09b18] text-[#08233f] w-12 h-12 rounded-full shadow-2xl border-2 border-[#08233f] items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none" aria-label="Retour en haut de page">
+    <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
+
+  <!-- Fichier JavaScript Externe -->
+  <script src="script.js"></script>
+</body>
+</body>
+</html>

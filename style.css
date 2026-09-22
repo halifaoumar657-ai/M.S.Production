@@ -1,0 +1,110 @@
+/* ==========================================================================
+   M.S. Production - Style global & Gestion optimale des images
+   ========================================================================== */
+
+/* 1. Configuration globale */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. Règle absolue pour l'adaptation de TOUTES les images */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* 3. Transitions fluides pour interactions */
+a, button, input, select, textarea {
+  transition: all 0.2s ease-in-out;
+}
+
+/* 4. Personnalisation des champs au focus */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(244, 173, 40, 0.2);
+}
+
+/* 5. Barre de défilement (Scrollbar) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdfbf7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #08233f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f4ad28;
+}
+/* Pour afficher l'image entière sans rognage */
+.img-entier {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+}
+/* Animation Flottante Infinie pour les images et cartes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Décalages d'animation pour l'effet de vague */
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1.0s;
+}
+
+.delay-3 {
+  animation-delay: 1.5s;
+}
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  display: none; /* Masqué par défaut */
+  width: 50px;
+  height: 50px;
+  background-color: #007bff; /* Couleur du bouton */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Bouton rond */
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol */
+#backToTop:hover {
+  background-color: #0056b3;
+  transform: translateY(-4px); /* Léger mouvement vers le haut */
+}
